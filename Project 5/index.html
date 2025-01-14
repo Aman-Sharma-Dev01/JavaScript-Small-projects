@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="main-frame">
-        <div class="panel">
-            <h1>Currency Converter</h1>
-            <form>
-                <p>Enter Your Amount</p>
-                <input type="text" id="input" >
-                <div class="from-to">
-                    <div class="txt1">From</div>
-                    <div class="txt2">To</div>
-                </div>
-                <div class="from-loader">
-                    <div class="from">
-                        <img id="from" src="https://flagsapi.com/IN/flat/64.png">
-                    <select name="from" id="fromSelectList">
-                        <option value="IN" selected >INR</option>
-                    </select>
-                    </div>
-                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                    <div class="to">
-                        <img id="to" src="https://flagsapi.com/US/flat/64.png">
-                        <select name="to" id="toSelectList">
-                        <option value="USA" selected >USD</option>
-                    </select>
-                    </div>
-                </div>
-                <div class="msg">1USD = 80 INR</div>
-                <button id="btn" >Get Exchange Value</button>
-            </form>
-
-        </div>
+      <div class="panel">
+        <h1>Currency Converter</h1>
+        <form>
+          <p>Enter Your Amount</p>
+          <input type="text" id="input" />
+          <div class="from-to">
+            <div class="txt1">From</div>
+            <div class="txt2">To</div>
+          </div>
+          <div class="from-loader">
+            <div class="from">
+              <img id="from" src="https://flagsapi.com/US/flat/64.png" />
+              <select name="from" id="fromSelectList">
+              </select>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+              <img id="to" src="https://flagsapi.com/IN/flat/64.png" />
+              <select name="to" id="toSelectList">
+              </select>
+            </div>
+          </div>
+          <div class="msg">1USD = 80 INR</div>
+          <button id="btn">Get Exchange Value</button>
+        </form>
+      </div>
     </div>
-
 
     <script src="curr.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
