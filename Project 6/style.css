@@ -19,7 +19,7 @@
 }
 .panel{
     background-color: var(--sec-color);
-    height: 62vh;
+    height: 70vh;
     /* width: 26vw; for media = 50vw */
     width: auto;
     display: flex;
@@ -61,4 +61,22 @@ h3{
 }
 .result-area{
     font-size: 25px;
+}
+#btn{
+    background-color: var(--primary-color);
+    color: var(--sec-color);
+    padding: 7px 15px;
+    font-size: 20px;
+    border-color: var(--sec-color);
+}
+#over-menu{
+    color: var(--sec-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    height: 70px;
+    width: 200px;
+    background-color: var(--ternary-color);
 }
