@@ -5,6 +5,7 @@ let result = document.querySelector('.result-area')
 let cpuScore = document.querySelector('.system-score')
 let userScore = document.querySelector('.user-score')
 let btn;
+let overMenu;
 let cpuPoint = 0
 let userPoint = 0
 boxes.forEach((item)=>{
@@ -39,13 +40,13 @@ function calculation (elem , cpu){
    if(user === cpu){
     result.innerText = 'Its a tie...'
    }
-   else if(user === 1 && cpu === 2){
+   else if(user === 1 && cpu === 3){
     result.innerText = 'You Win...'
     userPoint = userPoint+1
     cpuPoint = cpuPoint-1
     pointAdd();
    }
-   else if(user === 1 && cpu === 3){
+   else if(user === 1 && cpu === 2){
     result.innerText = 'You Lost...'
     userPoint = userPoint-1
     cpuPoint = cpuPoint+1
@@ -76,6 +77,7 @@ function calculation (elem , cpu){
     pointAdd();
    }
    againBtn();
+   pointAdd();
 }
 
 function againBtn (){
@@ -114,15 +116,17 @@ function pointAdd (){
     cpuScore.innerText = cpuPoint
     userScore.innerText = userPoint
     if(cpuPoint === 3){
-        let overMenu = document.createElement('div')
+        overMenu = document.createElement('div')
         overMenu.id = 'over-menu'
         overMenu.innerText = 'You Lost'
         mainFrame.append(overMenu)
+        btn.remove()
     }
     else if(userPoint === 3){
-        let overMenu = document.createElement('div')
+        overMenu = document.createElement('div')
         overMenu.id = 'over-menu'
         overMenu.innerText = 'You Win'
         mainFrame.append(overMenu)
+        btn.remove()
     }
 }
